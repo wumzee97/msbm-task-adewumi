@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: Roboto;
+}
+
+.top-bar {
+  height: 38.5px;
+  background-color: #222222;
+  color: #ababab !important;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  object-fit: cover;
+}
+
+.hero .overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999
+}
+
+.hero-big--text {
+  font-size: 76px;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  font-family: 'Roboto Slab';
+}
+
+.hero-container {
+  height: 100%;
+}
+
+.btn-primary {
+  background-color: rgb(255 182 6) !important;
+  border: 1px solid rgb(255 182 6) !important;
+}
+
+.btn-primary:hover {
+  opacity: 80%;
+}
+
+.hero-tip {
+  background-color: #222;
+  opacity: 80%;
+}
+
+.hero-tip:hover {
+  opacity: 100%;
+}
+
+.tip-text {
+  font-size: 23px;
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+}
+
+.tip-btn {
+  font-size: 15px;
+  color: #FFB606;
+  text-decoration: none;
+
+}
+
+.tip-btn:hover {
+  text-decoration: underline;
+  color: #FFB606;
+}
+
+.tip-icon {
+  font-size: 50px;
+  color: #FFB606;
+  /* padding-right: 130px; */
+
+}
+
+
+.register-now {
+  width: 100%;
+  height: 630px;
+  position: relative;
+  color: white;
+}
+
+.register-now img {
+  width: 100%;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  object-fit: cover;
+}
+
+.register-now .overlay {
+  width: 100%;
+  height: 630px;
+  background-color: rgba(34, 34, 34, 0.4);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+
+  z-index: 999
+}
+
+.register-now .overlay .container h2 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Roboto Slab';
+}
+
+.register-now .overlay .container p {
+  font-weight: bold;
+}
+
+.form-card {
+  background-color: white;
+  height: 500px;
+}
+
+.form-card .top {
+  background-color:#FFB606;
+}
+.form-card .top p{
+  font-size: 20px;
+  font-weight: medium;
+  font-family: 'Roboto Slab';
+}
+
+.countdown-container {
+  display: flex;
+  width: 100%;
+  max-width: 70%;
+  justify-content: space-between;
+}
+
+.days-container,
+.hours-container,
+.minutes-container,
+.seconds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  width: 140px;
+  height: 140px;
+  border-radius: 99px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+
+.days-label,
+.hours-label,
+.minutes-label,
+.seconds-label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+
+  .countdown-container {
+    max-width: 90%;
+  }
+
+  .days-container,
+  .hours-container,
+  .minutes-container,
+  .seconds-container {
+    font-size: 0.8em;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+input{
+  border-radius: 0 !important;
+  height: 55px !important;
+}
+.btn{
+  border-radius: 0 !important;
+}
+.btn-block{
+  width: 100% !important;
+}
+
+.why-us{
+  background-color: #f3f3f3;
+}
+
+.why-us h3, .popular-courses h3{
+  font-size: 30px;
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+}
+
+.why-us .card h4 {
+  font-size: 18px;
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+}
+.why-us .card p{
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #0000ff;
+}
+
+.why-us .card .fas{
+  font-size: 60px;
+  color: #FFB606;
+}
+
+.testimonial h3{
+  font-family: 'Roboto Slab';
+  font-weight: 600;
+}
+
+.price_plan_area {
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5ff;
+}
+
+.single_price_plan {
+  position: relative;
+  z-index: 1;
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 3rem 4rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single_price_plan {
+      padding: 3rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .single_price_plan {
+      padding: 3rem;
+  }
+}
+.single_price_plan::after {
+  position: absolute;
+  content: "";
+  background-image: url("https://bootdey.com/img/half-circle-pricing.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 17px;
+  bottom: -17px;
+  z-index: 1;
+  left: 0;
+}
+.single_price_plan .title {
+  text-transform: capitalize;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-bottom: 2rem;
+}
+.single_price_plan .title span {
+  color: #ffffff;
+  padding: 0.2rem 0.6rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #2ecc71;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+.single_price_plan .title h3 {
+  font-size: 1.25rem;
+}
+.single_price_plan .title p {
+  font-weight: 300;
+  line-height: 1;
+  font-size: 14px;
+}
+.single_price_plan .title .line {
+  width: 80px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #3f43fd;
+}
+.single_price_plan .price {
+  margin-bottom: 1.5rem;
+}
+.single_price_plan .price h4 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #3f43fd;
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e24997), to(#2d2ed4));
+  background-image: linear-gradient(90deg, #e24997, #2d2ed4);
+}
+.single_price_plan .description {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.single_price_plan .description p {
+  line-height: 16px;
+  margin: 0;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+.single_price_plan .description p i {
+  color: #2ecc71;
+  margin-right: 0.5rem;
+}
+.single_price_plan .description p .lni-close {
+  color: #e74c3c;
+}
+.single_price_plan.active,
+.single_price_plan:hover,
+.single_price_plan:focus {
+  -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+  box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+}
+.single_price_plan .side-shape img {
+  position: absolute;
+  width: auto;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.section-heading h3 {
+  margin-bottom: 1rem;
+  font-size: 3.125rem;
+  letter-spacing: -1px;
+  font-family: 'Roboto Slab';
+}
+
+.section-heading p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.section-heading .line {
+  width: 120px;
+  height: 5px;
+  margin: 30px auto 0;
+  border-radius: 6px;
+  background: #2d2ed4;
+  background: -webkit-gradient(linear, left top, right top, from(#e24997), to(#2d2ed4));
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+}
+
+.logo{
+  color: white;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-family: 'Roboto Slab';
+  font-size: 30px;
+
+}
+
+.hero-flow{
+  margin-top: 200px !important;
+}
+
+
+.navbar-nav{
+  margin-left: 150px;
+}
+
+@media only screen and (max-width: 768px){
+  .navbar-nav {
+
+    margin-left: 0;
+  }
+  .hero-flow{
+    margin-top: 50px !important;
+  }
+  .hero-big--text{
+    font-size: 50px;
+  }
+  .tip-text{
+    font-size: 20px;
+  }
+  .register-now .overlay .container h2{
+    font-size: 35px;
+  }
+  .why-us{
+    margin-top: 100px;
+  }
+  .section-heading h3{
+    font-size: 30px;
+  }
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span{
+  background: #fff !important; /* Define the custom color for hamburger icon bars */
+}
+.navbar-toggler{
+  border-color: #fff !important;
+  /* background-color: #fff !important; */
+}
